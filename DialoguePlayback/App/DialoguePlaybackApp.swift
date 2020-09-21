@@ -11,7 +11,10 @@ import SwiftUI
 struct DialoguePlaybackApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                messageService: MessageService(),
+                speechService: SpeechManager()
+            )
         }
     }
 }

@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A01CFF825168E22001AA07C /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01CFF725168E22001AA07C /* MessageService.swift */; };
+		9A01CFFE25169091001AA07C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01CFFD25169091001AA07C /* Message.swift */; };
+		9A58806E2517FFEB00742C8B /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A58806D2517FFEB00742C8B /* SpeechManager.swift */; };
 		9AEE8C3825153BE1000F79AF /* DialoguePlaybackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE8C3725153BE1000F79AF /* DialoguePlaybackApp.swift */; };
 		9AEE8C3A25153BE1000F79AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE8C3925153BE1000F79AF /* ContentView.swift */; };
 		9AEE8C3C25153BE2000F79AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE8C3B25153BE2000F79AF /* Assets.xcassets */; };
 		9AEE8C3F25153BE2000F79AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE8C3E25153BE2000F79AF /* Preview Assets.xcassets */; };
+		9AEE8C4925153D47000F79AF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE8C4825153D47000F79AF /* data.json */; };
+		9AEE8C5025153DEC000F79AF /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE8C4F25153DEC000F79AF /* SFProText-Light.ttf */; };
+		9AEE8C5425153E5C000F79AF /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE8C5325153E5C000F79AF /* MessageView.swift */; };
+		9AEE8C5A25154960000F79AF /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE8C5925154960000F79AF /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A01CFF725168E22001AA07C /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		9A01CFFD25169091001AA07C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9A58806D2517FFEB00742C8B /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 		9AEE8C3425153BE1000F79AF /* DialoguePlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialoguePlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEE8C3725153BE1000F79AF /* DialoguePlaybackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialoguePlaybackApp.swift; sourceTree = "<group>"; };
 		9AEE8C3925153BE1000F79AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9AEE8C3B25153BE2000F79AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AEE8C3E25153BE2000F79AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9AEE8C4025153BE2000F79AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AEE8C4825153D47000F79AF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		9AEE8C4F25153DEC000F79AF /* SFProText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Light.ttf"; sourceTree = "<group>"; };
+		9AEE8C5325153E5C000F79AF /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		9AEE8C5925154960000F79AF /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A01CFFB25168E86001AA07C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A01CFFD25169091001AA07C /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9AEE8C2B25153BE1000F79AF = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +74,13 @@
 		9AEE8C3625153BE1000F79AF /* DialoguePlayback */ = {
 			isa = PBXGroup;
 			children = (
-				9AEE8C3725153BE1000F79AF /* DialoguePlaybackApp.swift */,
-				9AEE8C3925153BE1000F79AF /* ContentView.swift */,
-				9AEE8C3B25153BE2000F79AF /* Assets.xcassets */,
-				9AEE8C4025153BE2000F79AF /* Info.plist */,
+				9AEE8C4B25153D7B000F79AF /* App */,
+				9AEE8C582515494E000F79AF /* Extensions */,
+				9A01CFFB25168E86001AA07C /* Models */,
 				9AEE8C3D25153BE2000F79AF /* Preview Content */,
+				9AEE8C4725153BEB000F79AF /* Resources */,
+				9AEE8C5E25155205000F79AF /* Service */,
+				9AEE8C5225153E40000F79AF /* Views */,
 			);
 			path = DialoguePlayback;
 			sourceTree = "<group>";
@@ -67,6 +91,51 @@
 				9AEE8C3E25153BE2000F79AF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9AEE8C4725153BEB000F79AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AEE8C3B25153BE2000F79AF /* Assets.xcassets */,
+				9AEE8C4825153D47000F79AF /* data.json */,
+				9AEE8C4F25153DEC000F79AF /* SFProText-Light.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9AEE8C4B25153D7B000F79AF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9AEE8C3725153BE1000F79AF /* DialoguePlaybackApp.swift */,
+				9AEE8C4025153BE2000F79AF /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9AEE8C5225153E40000F79AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AEE8C3925153BE1000F79AF /* ContentView.swift */,
+				9AEE8C5325153E5C000F79AF /* MessageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9AEE8C582515494E000F79AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9AEE8C5925154960000F79AF /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9AEE8C5E25155205000F79AF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9A01CFF725168E22001AA07C /* MessageService.swift */,
+				9A58806D2517FFEB00742C8B /* SpeechManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AEE8C3F25153BE2000F79AF /* Preview Assets.xcassets in Resources */,
+				9AEE8C4925153D47000F79AF /* data.json in Resources */,
 				9AEE8C3C25153BE2000F79AF /* Assets.xcassets in Resources */,
+				9AEE8C5025153DEC000F79AF /* SFProText-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A01CFF825168E22001AA07C /* MessageService.swift in Sources */,
+				9AEE8C5425153E5C000F79AF /* MessageView.swift in Sources */,
 				9AEE8C3A25153BE1000F79AF /* ContentView.swift in Sources */,
+				9A01CFFE25169091001AA07C /* Message.swift in Sources */,
 				9AEE8C3825153BE1000F79AF /* DialoguePlaybackApp.swift in Sources */,
+				9AEE8C5A25154960000F79AF /* Color+Extensions.swift in Sources */,
+				9A58806E2517FFEB00742C8B /* SpeechManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +347,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DialoguePlayback/Preview Content\"";
 				DEVELOPMENT_TEAM = G548HJ9ST6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DialoguePlayback/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DialoguePlayback/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -280,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = oo.DialoguePlayback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,7 +369,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DialoguePlayback/Preview Content\"";
 				DEVELOPMENT_TEAM = G548HJ9ST6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DialoguePlayback/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DialoguePlayback/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,7 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = oo.DialoguePlayback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
